@@ -69,8 +69,11 @@ class PdfReport:
         #Automatically View a PDF file
         webbrowser.open(self.filename)
 
+a = float(input("Hey user, enter the bill amount: "))
+print("This is a ", a)
 
-the_bill = Bill(amount=120, period="April 2021")
+
+the_bill = Bill(amount=a, period="April 2021")
 john = Flatmate(name="John", days_in_house=20)
 marry = Flatmate(name="Marry", days_in_house=25)
 
